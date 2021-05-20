@@ -20,98 +20,38 @@ public class CustomMap extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">
     private void initComponents() {
-
-        jLabel1 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        Grid_TextField = new javax.swing.JTextField();
+        Button_Okay = new javax.swing.JButton();
+        Mines_TextField = new javax.swing.JTextField();
+        Custom_Background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(300, 300));
+        getContentPane().setLayout(null);
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Enter bom number");
+        getContentPane().add(Grid_TextField);
+        Grid_TextField.setBounds(180, 130, 55, 19);
 
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
-            }
-        });
-
-        jButton1.setText("OK");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Button_Okay.setIcon(new javax.swing.ImageIcon("src/resources/img/Okay.jpg")); // NOI18N
+        Button_Okay.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(Button_Okay);
+        Button_Okay.setBounds(100, 230, 96, 34);
 
-        jLabel3.setFont(new java.awt.Font("VNI-Top", 0, 18)); // NOI18N
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("CUSTOMIZE MAP");
+        getContentPane().add(Mines_TextField);
+        Mines_TextField.setBounds(180, 170, 55, 19);
 
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Enter Grid Size");
-
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(layout.createSequentialGroup()
-                                                .addGap(104, 104, 104)
-                                                .addComponent(jLabel3))
-                                        .addGroup(layout.createSequentialGroup()
-                                                .addGap(166, 166, 166)
-                                                .addComponent(jButton1))
-                                        .addGroup(layout.createSequentialGroup()
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addGroup(layout.createSequentialGroup()
-                                                                .addGap(68, 68, 68)
-                                                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                        .addGroup(layout.createSequentialGroup()
-                                                                .addGap(47, 47, 47)
-                                                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                                .addGap(27, 27, 27)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                .addContainerGap(61, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap())
-        );
+        Custom_Background.setIcon(new javax.swing.ImageIcon("src/resources/img/Background/Final_Custom_BG.jpg")); // NOI18N
+        getContentPane().add(Custom_Background);
+        Custom_Background.setBounds(0, 0, 300, 300);
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
-
-
-    }
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
@@ -119,10 +59,10 @@ public class CustomMap extends javax.swing.JFrame {
         try{
             Object eventSource = evt.getSource();
             String input = "0";
-            input = jTextField2.getText();
+            input = Grid_TextField.getText();
             int size = Integer.parseInt(input);
             String input2 = "0";
-            input2 = jTextField4.getText();
+            input2 = Mines_TextField.getText();
             int bomnum = Integer.parseInt(input2);
             if(size < 6 && bomnum == 0){
                 JOptionPane.showMessageDialog(rootPane, "Cannot set size lower than 6 & bom is zero. Input Again");
@@ -147,17 +87,11 @@ public class CustomMap extends javax.swing.JFrame {
 
     }
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
-    }
-
 
     // Variables declaration - do not modify
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField4;
+    private javax.swing.JButton Button_Okay;
+    private javax.swing.JLabel Custom_Background;
+    private javax.swing.JTextField Grid_TextField;
+    private javax.swing.JTextField Mines_TextField;
     // End of variables declaration
 }

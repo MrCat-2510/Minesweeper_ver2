@@ -13,7 +13,6 @@ public class Minesweeper {
         minesweeper = new Minesweeper();
         input = new Input(minesweeper);
         input.main(input);
-
     }
     public void proceed(int size, int bom){
         System.out.println("This is size: " + size + " | This is bom: "+ bom);
